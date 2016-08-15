@@ -54,7 +54,6 @@ public class CLProgram {
     
     public convenience init(context: CLContext, source: String) throws {
   
-        var sourceString = source.cString(using: String.Encoding.utf8)!
         var error: cl_int = 0
        
         var sourcePtr = [UnsafePointer<Int8>(strdup(source))]

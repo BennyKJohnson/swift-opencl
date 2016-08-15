@@ -44,7 +44,7 @@ public class CLContext: CLObject {
     
     public convenience init() throws {
         
-        
+        let device = try CLDevice()
         try self.init(device: device)
     }
     

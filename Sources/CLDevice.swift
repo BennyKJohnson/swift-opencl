@@ -128,7 +128,7 @@ public class CLDevice {
     
     public lazy var workItemSizes: [Int] = {
         var values = Array<Int>(repeating: 0, count: self.workItemDimensions)
-        self.getInfo(for: cl_device_info(CL_DEVICE_MAX_WORK_ITEM_SIZES), size: (sizeof(size_t) * values.count), in: &values)
+        self.getInfo(for: cl_device_info(CL_DEVICE_MAX_WORK_ITEM_SIZES), size: (sizeof(size_t.self) * values.count), in: &values)
         return values
     }()
     

@@ -31,8 +31,8 @@ public class CLCommandQueue {
         
       
         var event = event
-        var gwo = globalWorkOffset
-        var eventWaitList = eventWaitList
+        //var gwo = globalWorkOffset
+        //var eventWaitList = eventWaitList
      
         let result = clEnqueueNDRangeKernel(queue, kernel.kernel, cl_uint(dimensions), nil, &globalWorkSize, &localWorkSize, 0, nil, &event)
         if let errorCode = CLError(rawValue: result) {
