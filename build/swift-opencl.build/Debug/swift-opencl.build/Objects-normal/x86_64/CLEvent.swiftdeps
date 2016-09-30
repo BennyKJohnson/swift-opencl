@@ -1,0 +1,129 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CLEvent"
+provides-nominal:
+- "C12swift_opencl7CLEvent"
+provides-member:
+- ["C12swift_opencl7CLEvent", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CLInfoProvider"
+- "cl_command_queue"
+- "cl_event"
+- "AssignmentPrecedence"
+- "Void"
+- !private "IntegerLiteralType"
+- "UnsafeMutablePointer"
+- "Int"
+- !private "FloatLiteralType"
+- "uint"
+- "cl_context"
+- "CLEvent"
+- !private "cl_event_info"
+- !private "CL_EVENT_COMMAND_QUEUE"
+- !private "clGetEventInfo"
+- !private "CL_EVENT_CONTEXT"
+depends-member:
+- !private ["Ps9AnyObject", "CL_EVENT_COMMAND_QUEUE"]
+- !private ["Ps9AnyObject", "CL_EVENT_CONTEXT"]
+- !private ["Ps9AnyObject", "clGetEventInfo"]
+- !private ["Ps9AnyObject", "cl_event_info"]
+- ["Ps9AnyObject", "getInfo"]
+- ["Ps9AnyObject", "infoSize"]
+- !private ["Ps9AnyObject", "reference"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["C12swift_opencl7CLEvent", "CL_EVENT_COMMAND_QUEUE"]
+- !private ["C12swift_opencl7CLEvent", "CL_EVENT_CONTEXT"]
+- ["C12swift_opencl7CLEvent", "Int"]
+- ["C12swift_opencl7CLEvent", "UnsafeMutablePointer"]
+- ["C12swift_opencl7CLEvent", "Void"]
+- !private ["C12swift_opencl7CLEvent", "clGetEventInfo"]
+- ["C12swift_opencl7CLEvent", "cl_command_queue"]
+- ["C12swift_opencl7CLEvent", "cl_context"]
+- ["C12swift_opencl7CLEvent", "cl_event"]
+- !private ["C12swift_opencl7CLEvent", "cl_event_info"]
+- ["C12swift_opencl7CLEvent", "commandQueueReference"]
+- ["C12swift_opencl7CLEvent", "contextReference"]
+- ["C12swift_opencl7CLEvent", "deinit"]
+- ["C12swift_opencl7CLEvent", "getInfo"]
+- ["C12swift_opencl7CLEvent", "infoSize"]
+- ["C12swift_opencl7CLEvent", "init"]
+- ["C12swift_opencl7CLEvent", "reference"]
+- ["C12swift_opencl7CLEvent", "uint"]
+- !private ["P12swift_opencl14CLInfoProvider", "CL_EVENT_COMMAND_QUEUE"]
+- !private ["P12swift_opencl14CLInfoProvider", "CL_EVENT_CONTEXT"]
+- !private ["P12swift_opencl14CLInfoProvider", "clGetEventInfo"]
+- !private ["P12swift_opencl14CLInfoProvider", "cl_event_info"]
+- ["P12swift_opencl14CLInfoProvider", "getInfo"]
+- ["P12swift_opencl14CLInfoProvider", "infoSize"]
+- !private ["P12swift_opencl14CLInfoProvider", "reference"]
+- ["P12swift_opencl14CLInfoProvider", ""]
+- !private ["P12swift_opencl13CLNumberValue", "init"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps8Hashable", "init"]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- ["Vs5Int32", "deinit"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- ["Vs13OpaquePointer", "deinit"]
+- !private ["Ps10Strideable", "init"]
+- ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "C12swift_opencl7CLEvent"
+- "P12swift_opencl14CLInfoProvider"
+- !private "P12swift_opencl13CLNumberValue"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps8Hashable"
+- "SQ"
+- "Si"
+- "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "Vs13OpaquePointer"
+- !private "Ps10Strideable"
+- "Vs6UInt32"
+- !private "Ps15UnsignedInteger"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/OpenCL.swiftmodule"
+interface-hash: "49fd7c8d539a535b49d983653857bd47"

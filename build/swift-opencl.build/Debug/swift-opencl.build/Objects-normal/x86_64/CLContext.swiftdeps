@@ -1,0 +1,256 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CLContextError"
+- "CLContext"
+- "=="
+provides-nominal:
+- "O12swift_opencl14CLContextError"
+- "C12swift_opencl9CLContext"
+provides-member:
+- ["O12swift_opencl14CLContextError", ""]
+- ["C12swift_opencl9CLContext", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CLContext"
+- "cl_context"
+- "uint"
+- "Int"
+- !private "FloatLiteralType"
+- "UnsafeMutablePointer"
+- "Void"
+- !private "IntegerLiteralType"
+- "CLContextError"
+- "=="
+- "AssignmentPrecedence"
+- "Error"
+- "OpaquePointer"
+- !private "CL_SUCCESS"
+- !private "CLError"
+- "CLInfoProvider"
+- !private "clGetContextInfo"
+- !private "clReleaseContext"
+- !private "MemoryLayout"
+- !private "cl_int"
+- "CLObject"
+- !private "cl_mem"
+- !private "clCreateContext"
+- "CLDevice"
+- !private "cl_device_id"
+depends-member:
+- !private ["Ps9AnyObject", "CLDevice"]
+- !private ["Ps9AnyObject", "CLError"]
+- !private ["Ps9AnyObject", "CL_SUCCESS"]
+- !private ["Ps9AnyObject", "MemoryLayout"]
+- !private ["Ps9AnyObject", "clCreateContext"]
+- !private ["Ps9AnyObject", "clGetContextInfo"]
+- !private ["Ps9AnyObject", "clReleaseContext"]
+- !private ["Ps9AnyObject", "context"]
+- !private ["Ps9AnyObject", "deviceID"]
+- ["Ps9AnyObject", "getInfo"]
+- ["Ps9AnyObject", "infoSize"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "reference"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["C12swift_opencl9CLContext", "CLDevice"]
+- !private ["C12swift_opencl9CLContext", "CLError"]
+- !private ["C12swift_opencl9CLContext", "CL_SUCCESS"]
+- ["C12swift_opencl9CLContext", "Int"]
+- !private ["C12swift_opencl9CLContext", "MemoryLayout"]
+- ["C12swift_opencl9CLContext", "OpaquePointer"]
+- ["C12swift_opencl9CLContext", "UnsafeMutablePointer"]
+- ["C12swift_opencl9CLContext", "Void"]
+- !private ["C12swift_opencl9CLContext", "clCreateContext"]
+- !private ["C12swift_opencl9CLContext", "clGetContextInfo"]
+- !private ["C12swift_opencl9CLContext", "clReleaseContext"]
+- ["C12swift_opencl9CLContext", "cl_context"]
+- !private ["C12swift_opencl9CLContext", "cl_device_id"]
+- !private ["C12swift_opencl9CLContext", "cl_int"]
+- !private ["C12swift_opencl9CLContext", "cl_mem"]
+- ["C12swift_opencl9CLContext", "context"]
+- ["C12swift_opencl9CLContext", "deinit"]
+- ["C12swift_opencl9CLContext", "getInfo"]
+- ["C12swift_opencl9CLContext", "infoSize"]
+- ["C12swift_opencl9CLContext", "init"]
+- ["C12swift_opencl9CLContext", "reference"]
+- ["C12swift_opencl9CLContext", "size"]
+- ["C12swift_opencl9CLContext", "uint"]
+- ["O12swift_opencl14CLContextError", "=="]
+- ["O12swift_opencl14CLContextError", "_code"]
+- ["O12swift_opencl14CLContextError", "_domain"]
+- ["O12swift_opencl14CLContextError", "_getEmbeddedNSError"]
+- ["O12swift_opencl14CLContextError", "_toAnyHashable"]
+- ["O12swift_opencl14CLContextError", "_userInfo"]
+- ["O12swift_opencl14CLContextError", "deinit"]
+- ["O12swift_opencl14CLContextError", "failedToCreateContext"]
+- ["O12swift_opencl14CLContextError", "hashValue"]
+- ["C12swift_opencl8CLDevice", "deinit"]
+- !private ["C12swift_opencl8CLDevice", "deviceID"]
+- !private ["C12swift_opencl8CLDevice", "init"]
+- ["O12swift_opencl7CLError", "deinit"]
+- !private ["O12swift_opencl7CLError", "init"]
+- !private ["P12swift_opencl14CLInfoProvider", "CLDevice"]
+- !private ["P12swift_opencl14CLInfoProvider", "CLError"]
+- !private ["P12swift_opencl14CLInfoProvider", "CL_SUCCESS"]
+- !private ["P12swift_opencl14CLInfoProvider", "MemoryLayout"]
+- !private ["P12swift_opencl14CLInfoProvider", "clCreateContext"]
+- !private ["P12swift_opencl14CLInfoProvider", "clGetContextInfo"]
+- !private ["P12swift_opencl14CLInfoProvider", "clReleaseContext"]
+- !private ["P12swift_opencl14CLInfoProvider", "context"]
+- !private ["P12swift_opencl14CLInfoProvider", "deviceID"]
+- ["P12swift_opencl14CLInfoProvider", "getInfo"]
+- ["P12swift_opencl14CLInfoProvider", "infoSize"]
+- !private ["P12swift_opencl14CLInfoProvider", "init"]
+- ["P12swift_opencl14CLInfoProvider", "reference"]
+- ["P12swift_opencl14CLInfoProvider", ""]
+- !private ["P12swift_opencl13CLNumberValue", "hashValue"]
+- !private ["P12swift_opencl8CLObject", "CLDevice"]
+- !private ["P12swift_opencl8CLObject", "CLError"]
+- !private ["P12swift_opencl8CLObject", "CL_SUCCESS"]
+- !private ["P12swift_opencl8CLObject", "MemoryLayout"]
+- !private ["P12swift_opencl8CLObject", "clCreateContext"]
+- !private ["P12swift_opencl8CLObject", "clGetContextInfo"]
+- !private ["P12swift_opencl8CLObject", "clReleaseContext"]
+- !private ["P12swift_opencl8CLObject", "context"]
+- ["P12swift_opencl8CLObject", "getInfo"]
+- ["P12swift_opencl8CLObject", "infoSize"]
+- !private ["P12swift_opencl8CLObject", "init"]
+- ["P12swift_opencl8CLObject", "reference"]
+- ["P12swift_opencl8CLObject", ""]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "deviceID"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps9Equatable", "_code"]
+- ["Ps9Equatable", "_domain"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_getEmbeddedNSError"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "_userInfo"]
+- ["Ps9Equatable", "hashValue"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_toAnyHashable"]
+- ["Ps5Error", "_userInfo"]
+- ["Ps5Error", "hashValue"]
+- !private ["Ps5Error", "init"]
+- ["Ps5Error", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- ["Ps8Hashable", "_code"]
+- ["Ps8Hashable", "_domain"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_getEmbeddedNSError"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "_userInfo"]
+- ["Ps8Hashable", "hashValue"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- ["Vs5Int32", "deinit"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Os12MemoryLayout", "size"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Vs13OpaquePointer", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["Vs6UInt32", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps9_Hashable", "_code"]
+- ["Ps9_Hashable", "_domain"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_getEmbeddedNSError"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "_userInfo"]
+- ["Ps9_Hashable", "hashValue"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "C12swift_opencl9CLContext"
+- "O12swift_opencl14CLContextError"
+- "C12swift_opencl8CLDevice"
+- "O12swift_opencl7CLError"
+- "P12swift_opencl14CLInfoProvider"
+- !private "P12swift_opencl13CLNumberValue"
+- "P12swift_opencl8CLObject"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Si"
+- "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Os12MemoryLayout"
+- !private "Ps10MirrorPath"
+- "Vs13OpaquePointer"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "Vs6UInt32"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/OpenCL.swiftmodule"
+interface-hash: "b7a3d352dc8272a746e7607c277c3c35"

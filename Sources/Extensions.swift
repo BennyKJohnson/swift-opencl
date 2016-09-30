@@ -20,6 +20,11 @@ extension cl_bool {
         }
       
     }
-    
-    
+}
+
+extension RandomAccessCollection  {
+    var byteSize: Int {
+        let typeSize = MemoryLayout<Iterator.Element>.size
+        return typeSize * Int(count.toIntMax())
+    }
 }

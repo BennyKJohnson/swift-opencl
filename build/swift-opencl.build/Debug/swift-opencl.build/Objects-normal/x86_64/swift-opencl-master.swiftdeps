@@ -1,0 +1,17 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.43.6 clang-800.0.38)"
+options: "7880949a944ba55751ed4180797902cf"
+build_time: [525936196, 9131000]
+inputs:
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLBuffer.swift": [524729191, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLCommandQueue.swift": [524726022, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLContext.swift": [525327601, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLDevice.swift": [525327601, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLError.swift": [524309957, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLEvent.swift": [524309995, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLInfoProvider.swift": [525327601, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLKernel.swift": [525328273, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLMemory.swift": [524725613, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLPlatform.swift": [524310056, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLProgram.swift": [524538158, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/CLWorkgroup.swift": [524310590, 0]
+  "/Users/benjohnson/Desktop/swift-opencl/Sources/Extensions.swift": [524285587, 0]

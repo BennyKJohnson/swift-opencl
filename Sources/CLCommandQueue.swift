@@ -27,14 +27,15 @@ public class CLCommandQueue {
         self.init(queue: commandQueue)
     }
     
-    public func enqueueNDRange(with kernel: CLKernel, dimensions: Int, globalWorkSize:inout Int, localWorkSize:inout Int,  globalWorkOffset: Int? = nil,numberOfEventsInWaitList: Int = 0, eventWaitList: cl_event? = nil, event: cl_event? = nil) throws {
+    public func enqueueNDRange(with kernel: CLKernel, dimensions: Int, globalWorkSize:inout Int, localWorkSize: Int!,  globalWorkOffset: Int? = nil,numberOfEventsInWaitList: Int = 0, eventWaitList: cl_event? = nil, event: cl_event? = nil) throws {
+        var localWorkSize = localWorkSize
         
-      
+        
         var event = event
         //var gwo = globalWorkOffset
         //var eventWaitList = eventWaitList
-     
-        let result = clEnqueueNDRangeKernel(queue, kernel.kernel, cl_uint(dimensions), nil, &globalWorkSize, &localWorkSize, 0, nil, &event)
+        
+        let result = clEnqueueNDRangeKernel(queue, kernel.kernel, cl_uint(dimensions), nil, &globalWorkSize, nil, 0, nil, &event)
         if let errorCode = CLError(rawValue: result) {
             throw errorCode
         }
@@ -62,6 +63,21 @@ public class CLCommandQueue {
         var event: cl_event? = nil
         
         clEnqueueReadBuffer(queue, buffer.reference, cl_bool(bool: blockingRead), offset, readSize, pointer, cl_uint(numberEventsInWaitList), &eventWaitList, &event)
+        
+        return event
+    }
+    
+    public func enqueueRead<T>(withBuffer buffer: CLBuffer, blockingRead: Bool, writeTo array: inout [T]) throws -> cl_event?   {
+        
+        let arraySize = MemoryLayout<T>.size * array.count
+        return try enqueueRead(withBuffer: buffer, blockingRead: blockingRead, offset: 0, readSize: arraySize, writeTo: &array)
+    }
+    
+    
+    public func enqueueCopy(from source: CLBuffer, to destination: CLBuffer, sourceOffset: Int, destinationOffset: Int, size: Int) -> cl_event? {
+        var event: cl_event? = nil
+
+        clEnqueueCopyBuffer(queue, source.reference, destination.reference, sourceOffset, destinationOffset, size, 0, nil, &event)
         
         return event
     }

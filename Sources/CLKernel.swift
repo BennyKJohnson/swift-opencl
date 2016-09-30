@@ -9,6 +9,16 @@
 import Foundation
 import OpenCL
 
+
+public protocol CLVectorType {}
+extension cl_uint2: CLVectorType {}
+extension cl_uint4: CLVectorType {}
+extension cl_uint8: CLVectorType {}
+extension cl_uint16: CLVectorType {}
+extension cl_int4: CLVectorType {}
+
+
+
 public class CLKernel {
     
     public let kernel: cl_kernel
@@ -62,25 +72,33 @@ public class CLKernel {
         clSetKernelArg(kernel, argumentIndex, size, pointer)
     }
     
-    public func setValue<T: Integer>(_ value: T, forArgAtIndex argIndex: Int) {
-        var value = value
-        setValue(&value, withSize: sizeof(value.dynamicType.self), forArgAtIndex: argIndex)
+    public func setValue(_ value: Int, forArgAtIndex argIndex: Int) {
+        //var value = value
+        var converted = cl_int(value)
+        setValue(&converted, withSize: MemoryLayout<cl_int>.size, forArgAtIndex: argIndex)
     }
     
     public func setValue<T: BinaryFloatingPoint>(_ value: T, forArgAtIndex argIndex: Int) {
         var value = value
-        setValue(&value, withSize: sizeof(value.dynamicType.self), forArgAtIndex: argIndex)
+        
+        setValue(&value, withSize: MemoryLayout<T>.size, forArgAtIndex: argIndex)
     }
     
-    public func setValue(_ value: CLObject, forArgAtIndex argIndex: Int) {
+    public func setValue<T: CLVectorType>(_ value: T, forArgAtIndex argIndex: Int) {
+        var value = value
         
+        setValue(&value, withSize: MemoryLayout<T>.size, forArgAtIndex: argIndex)
+    }
+    
+    
+    public func setValue(_ value: CLObject, forArgAtIndex argIndex: Int) {
         let argumentIndex = cl_uint(argIndex)
         
-        
         var objectReference = value.reference
-        clSetKernelArg(kernel, argumentIndex, sizeof(OpaquePointer.self), &objectReference)
+        clSetKernelArg(kernel, argumentIndex, MemoryLayout<OpaquePointer>.size, &objectReference)
         
     }
+    
     
     public func workGroup(for device: CLDevice) -> CLWorkGroup {
         return CLWorkGroup(kernel: self, device: device)

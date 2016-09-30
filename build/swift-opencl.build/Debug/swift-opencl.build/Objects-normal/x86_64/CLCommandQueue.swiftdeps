@@ -1,0 +1,274 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CLCommandQueue"
+provides-nominal:
+- "C12swift_opencl14CLCommandQueue"
+provides-member:
+- ["C12swift_opencl14CLCommandQueue", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "cl_command_queue"
+- !private "clReleaseCommandQueue"
+- !private "CL_TRUE"
+- "cl_event"
+- !private "cl_bool"
+- "Void"
+- !private "StringLiteralType"
+- !private "clFinish"
+- "UnsafeMutablePointer"
+- "Int"
+- "Swift"
+- "CLContext"
+- !private "CLError"
+- !private "cl_uint"
+- "AssignmentPrecedence"
+- !private "clEnqueueCopyBuffer"
+- "Bool"
+- !private "cl_int"
+- !private "clCreateCommandQueue"
+- "CLKernel"
+- !private "clEnqueueNDRangeKernel"
+- "UnsafePointer"
+- "CLBuffer"
+- !private "FloatLiteralType"
+- !private "fatalError"
+- "CLDevice"
+- !private "clEnqueueReadBuffer"
+- "CLCommandQueue"
+- !private "IntegerLiteralType"
+- !private "clEnqueueWriteBuffer"
+depends-member:
+- !private ["Ps9AnyObject", "CLError"]
+- !private ["Ps9AnyObject", "CL_TRUE"]
+- !private ["Ps9AnyObject", "clCreateCommandQueue"]
+- !private ["Ps9AnyObject", "clEnqueueCopyBuffer"]
+- !private ["Ps9AnyObject", "clEnqueueNDRangeKernel"]
+- !private ["Ps9AnyObject", "clEnqueueReadBuffer"]
+- !private ["Ps9AnyObject", "clEnqueueWriteBuffer"]
+- !private ["Ps9AnyObject", "clFinish"]
+- !private ["Ps9AnyObject", "clReleaseCommandQueue"]
+- !private ["Ps9AnyObject", "cl_bool"]
+- !private ["Ps9AnyObject", "cl_uint"]
+- !private ["Ps9AnyObject", "context"]
+- !private ["Ps9AnyObject", "deviceID"]
+- !private ["Ps9AnyObject", "fatalError"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "kernel"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "reference"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
+- ["Sb", "deinit"]
+- ["C12swift_opencl8CLBuffer", "deinit"]
+- !private ["C12swift_opencl8CLBuffer", "reference"]
+- ["C12swift_opencl14CLCommandQueue", "Bool"]
+- ["C12swift_opencl14CLCommandQueue", "CLBuffer"]
+- ["C12swift_opencl14CLCommandQueue", "CLContext"]
+- ["C12swift_opencl14CLCommandQueue", "CLDevice"]
+- !private ["C12swift_opencl14CLCommandQueue", "CLError"]
+- ["C12swift_opencl14CLCommandQueue", "CLKernel"]
+- !private ["C12swift_opencl14CLCommandQueue", "CL_TRUE"]
+- ["C12swift_opencl14CLCommandQueue", "Int"]
+- ["C12swift_opencl14CLCommandQueue", "Swift"]
+- ["C12swift_opencl14CLCommandQueue", "UnsafeMutablePointer"]
+- ["C12swift_opencl14CLCommandQueue", "UnsafePointer"]
+- ["C12swift_opencl14CLCommandQueue", "Void"]
+- !private ["C12swift_opencl14CLCommandQueue", "clCreateCommandQueue"]
+- !private ["C12swift_opencl14CLCommandQueue", "clEnqueueCopyBuffer"]
+- !private ["C12swift_opencl14CLCommandQueue", "clEnqueueNDRangeKernel"]
+- !private ["C12swift_opencl14CLCommandQueue", "clEnqueueReadBuffer"]
+- !private ["C12swift_opencl14CLCommandQueue", "clEnqueueWriteBuffer"]
+- !private ["C12swift_opencl14CLCommandQueue", "clFinish"]
+- !private ["C12swift_opencl14CLCommandQueue", "clReleaseCommandQueue"]
+- !private ["C12swift_opencl14CLCommandQueue", "cl_bool"]
+- ["C12swift_opencl14CLCommandQueue", "cl_command_queue"]
+- ["C12swift_opencl14CLCommandQueue", "cl_event"]
+- !private ["C12swift_opencl14CLCommandQueue", "cl_int"]
+- !private ["C12swift_opencl14CLCommandQueue", "cl_uint"]
+- ["C12swift_opencl14CLCommandQueue", "deinit"]
+- ["C12swift_opencl14CLCommandQueue", "enqueueCopy"]
+- ["C12swift_opencl14CLCommandQueue", "enqueueNDRange"]
+- ["C12swift_opencl14CLCommandQueue", "enqueueRead"]
+- ["C12swift_opencl14CLCommandQueue", "enqueueWrite"]
+- !private ["C12swift_opencl14CLCommandQueue", "fatalError"]
+- ["C12swift_opencl14CLCommandQueue", "finish"]
+- ["C12swift_opencl14CLCommandQueue", "init"]
+- ["C12swift_opencl14CLCommandQueue", "queue"]
+- !private ["C12swift_opencl9CLContext", "context"]
+- ["C12swift_opencl9CLContext", "deinit"]
+- ["C12swift_opencl8CLDevice", "deinit"]
+- !private ["C12swift_opencl8CLDevice", "deviceID"]
+- ["O12swift_opencl7CLError", "deinit"]
+- !private ["O12swift_opencl7CLError", "init"]
+- !private ["P12swift_opencl14CLInfoProvider", "context"]
+- !private ["P12swift_opencl14CLInfoProvider", "deviceID"]
+- !private ["P12swift_opencl14CLInfoProvider", "kernel"]
+- ["C12swift_opencl8CLKernel", "deinit"]
+- !private ["C12swift_opencl8CLKernel", "kernel"]
+- !private ["P12swift_opencl13CLNumberValue", "init"]
+- !private ["P12swift_opencl8CLObject", "context"]
+- !private ["P12swift_opencl8CLObject", "reference"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "deviceID"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps5Error", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "init"]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Os5Never", "deinit"]
+- ["Vs13OpaquePointer", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps16RawRepresentable", "init"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "init"]
+- ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- ["Sp", "deinit"]
+- ["SP", "deinit"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "C12swift_opencl8CLBuffer"
+- "C12swift_opencl14CLCommandQueue"
+- "C12swift_opencl9CLContext"
+- "C12swift_opencl8CLDevice"
+- "O12swift_opencl7CLError"
+- !private "P12swift_opencl14CLInfoProvider"
+- "C12swift_opencl8CLKernel"
+- !private "P12swift_opencl13CLNumberValue"
+- !private "P12swift_opencl8CLObject"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Ps8Hashable"
+- "SQ"
+- "Si"
+- !private "Vs5Int16"
+- "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Os5Never"
+- "Vs13OpaquePointer"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- "Su"
+- !private "Vs6UInt16"
+- "Vs6UInt32"
+- "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "Sp"
+- "SP"
+- !private "Ps15UnsignedInteger"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/OpenCL.swiftmodule"
+interface-hash: "7314a7dfac1d1d00178613be135bef39"

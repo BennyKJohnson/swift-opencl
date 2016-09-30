@@ -31,6 +31,11 @@ public class CLMemory {
         return Int(value)
     }
     
+    public var hostPointer: UnsafePointer<Void> {
+        let value: UnsafePointer<Void> = getInfo(cl_mem_info(CL_MEM_HOST_PTR))
+        return value
+    }
+    
     public var context: cl_context {
         return getInfo(cl_mem_info(CL_MEM_CONTEXT))
     }

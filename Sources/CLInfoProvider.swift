@@ -52,7 +52,7 @@ extension CLInfoProvider {
     
     func getInfoInteger(_ param: uint) -> Int {
         var resultInteger: cl_uint! = 0
-        getInfo(for: param, size: sizeof(cl_uint.self), in: &resultInteger)
+        getInfo(for: param, size: MemoryLayout<cl_uint>.size, in: &resultInteger)
         return Int(resultInteger)
         
     }
@@ -68,7 +68,7 @@ extension CLInfoProvider {
     func getType(for param: uint) -> OpaquePointer {
         
         var placeholder: OpaquePointer!
-        getInfo(for: param, size: sizeof(OpaquePointer.self), in: &placeholder)
+        getInfo(for: param, size: MemoryLayout<OpaquePointer>.size, in: &placeholder)
         
         return placeholder
     }

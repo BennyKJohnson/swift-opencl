@@ -26,7 +26,7 @@ public class CLContext: CLObject {
     }
     
     public var size:Int {
-        return sizeof(cl_mem.self)
+        return MemoryLayout<cl_mem>.size
     }
     
     public convenience init(device: CLDevice) throws {

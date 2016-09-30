@@ -1,0 +1,239 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CLMemType"
+- "CLBuffer"
+- "=="
+provides-nominal:
+- "O12swift_opencl9CLMemType"
+- "C12swift_opencl8CLBuffer"
+provides-member:
+- ["O12swift_opencl9CLMemType", ""]
+- ["C12swift_opencl8CLBuffer", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "cl_mem"
+- !private "CLError"
+- "CLMemory"
+- !private "CL_MEM_READ_ONLY"
+- !private "clCreateBuffer"
+- "cl_mem_flags"
+- "CLMemType"
+- "CLObject"
+- "Void"
+- "=="
+- "UnsafeMutablePointer"
+- "AssignmentPrecedence"
+- "Int"
+- !private "CL_MEM_WRITE_ONLY"
+- "CLContext"
+- "OpaquePointer"
+- !private "CL_MEM_READ_WRITE"
+- !private "FloatLiteralType"
+- !private "cl_int"
+- "CLBuffer"
+- !private "IntegerLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "CLError"]
+- !private ["Ps9AnyObject", "CLMemory"]
+- !private ["Ps9AnyObject", "clCreateBuffer"]
+- !private ["Ps9AnyObject", "context"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mem"]
+- !private ["Ps9AnyObject", "memory"]
+- ["Ps9AnyObject", "reference"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Ps17BitwiseOperations", "init"]
+- ["C12swift_opencl8CLBuffer", "CLContext"]
+- !private ["C12swift_opencl8CLBuffer", "CLError"]
+- ["C12swift_opencl8CLBuffer", "CLMemType"]
+- ["C12swift_opencl8CLBuffer", "CLMemory"]
+- ["C12swift_opencl8CLBuffer", "Int"]
+- ["C12swift_opencl8CLBuffer", "OpaquePointer"]
+- ["C12swift_opencl8CLBuffer", "UnsafeMutablePointer"]
+- ["C12swift_opencl8CLBuffer", "Void"]
+- !private ["C12swift_opencl8CLBuffer", "clCreateBuffer"]
+- !private ["C12swift_opencl8CLBuffer", "cl_int"]
+- ["C12swift_opencl8CLBuffer", "cl_mem"]
+- ["C12swift_opencl8CLBuffer", "deinit"]
+- ["C12swift_opencl8CLBuffer", "init"]
+- ["C12swift_opencl8CLBuffer", "memory"]
+- ["C12swift_opencl8CLBuffer", "reference"]
+- !private ["C12swift_opencl9CLContext", "context"]
+- ["C12swift_opencl9CLContext", "deinit"]
+- ["O12swift_opencl7CLError", "deinit"]
+- !private ["O12swift_opencl7CLError", "init"]
+- !private ["P12swift_opencl14CLInfoProvider", "context"]
+- !private ["P12swift_opencl14CLInfoProvider", "init"]
+- !private ["P12swift_opencl14CLInfoProvider", "mem"]
+- ["O12swift_opencl9CLMemType", "=="]
+- !private ["O12swift_opencl9CLMemType", "CL_MEM_READ_ONLY"]
+- !private ["O12swift_opencl9CLMemType", "CL_MEM_READ_WRITE"]
+- !private ["O12swift_opencl9CLMemType", "CL_MEM_WRITE_ONLY"]
+- ["O12swift_opencl9CLMemType", "_toAnyHashable"]
+- ["O12swift_opencl9CLMemType", "cl_mem_flags"]
+- ["O12swift_opencl9CLMemType", "deinit"]
+- ["O12swift_opencl9CLMemType", "flags"]
+- ["O12swift_opencl9CLMemType", "hashValue"]
+- ["O12swift_opencl9CLMemType", "readOnly"]
+- ["O12swift_opencl9CLMemType", "readWrite"]
+- ["O12swift_opencl9CLMemType", "writeOnly"]
+- ["C12swift_opencl8CLMemory", "deinit"]
+- !private ["C12swift_opencl8CLMemory", "init"]
+- !private ["C12swift_opencl8CLMemory", "mem"]
+- !private ["P12swift_opencl13CLNumberValue", "hashValue"]
+- !private ["P12swift_opencl13CLNumberValue", "init"]
+- !private ["P12swift_opencl8CLObject", "CLError"]
+- !private ["P12swift_opencl8CLObject", "CLMemory"]
+- !private ["P12swift_opencl8CLObject", "clCreateBuffer"]
+- !private ["P12swift_opencl8CLObject", "context"]
+- !private ["P12swift_opencl8CLObject", "init"]
+- !private ["P12swift_opencl8CLObject", "memory"]
+- ["P12swift_opencl8CLObject", "reference"]
+- ["P12swift_opencl8CLObject", ""]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "CL_MEM_READ_ONLY"]
+- !private ["Ps9Equatable", "CL_MEM_READ_WRITE"]
+- !private ["Ps9Equatable", "CL_MEM_WRITE_ONLY"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "cl_mem_flags"]
+- !private ["Ps9Equatable", "flags"]
+- ["Ps9Equatable", "hashValue"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "readOnly"]
+- ["Ps9Equatable", "readWrite"]
+- ["Ps9Equatable", "writeOnly"]
+- ["Ps9Equatable", ""]
+- !private ["Ps5Error", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps8Hashable", "CL_MEM_READ_ONLY"]
+- !private ["Ps8Hashable", "CL_MEM_READ_WRITE"]
+- !private ["Ps8Hashable", "CL_MEM_WRITE_ONLY"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "cl_mem_flags"]
+- !private ["Ps8Hashable", "flags"]
+- ["Ps8Hashable", "hashValue"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "readOnly"]
+- ["Ps8Hashable", "readWrite"]
+- ["Ps8Hashable", "writeOnly"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- ["Vs5Int32", "deinit"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Vs13OpaquePointer", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps10Strideable", "init"]
+- ["Vs6UInt64", "deinit"]
+- !private ["Vs6UInt64", "init"]
+- ["Sp", "deinit"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps9_Hashable", "CL_MEM_READ_ONLY"]
+- !private ["Ps9_Hashable", "CL_MEM_READ_WRITE"]
+- !private ["Ps9_Hashable", "CL_MEM_WRITE_ONLY"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "cl_mem_flags"]
+- !private ["Ps9_Hashable", "flags"]
+- ["Ps9_Hashable", "hashValue"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "readOnly"]
+- ["Ps9_Hashable", "readWrite"]
+- ["Ps9_Hashable", "writeOnly"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- "C12swift_opencl8CLBuffer"
+- "C12swift_opencl9CLContext"
+- "O12swift_opencl7CLError"
+- !private "P12swift_opencl14CLInfoProvider"
+- "O12swift_opencl9CLMemType"
+- "C12swift_opencl8CLMemory"
+- !private "P12swift_opencl13CLNumberValue"
+- "P12swift_opencl8CLObject"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Si"
+- "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps10MirrorPath"
+- "Vs13OpaquePointer"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "Vs6UInt64"
+- "Sp"
+- !private "Ps15UnsignedInteger"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/OpenCL.swiftmodule"
+interface-hash: "08dd315e9469b480424c851729f5ebc8"

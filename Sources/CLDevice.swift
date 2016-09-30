@@ -66,7 +66,7 @@ public class CLDevice {
         self.deviceID = deviceID
     }
     
-    convenience init() throws {
+    public convenience init() throws {
         if let gpuDevice = CLDevice.devices(with: .gpu).first {
             self.init(deviceID: gpuDevice.deviceID)
         } else if let cpuDevice = CLDevice.devices(with: .cpu).first {
@@ -128,7 +128,7 @@ public class CLDevice {
     
     public lazy var workItemSizes: [Int] = {
         var values = Array<Int>(repeating: 0, count: self.workItemDimensions)
-        self.getInfo(for: cl_device_info(CL_DEVICE_MAX_WORK_ITEM_SIZES), size: (sizeof(size_t.self) * values.count), in: &values)
+        self.getInfo(for: cl_device_info(CL_DEVICE_MAX_WORK_ITEM_SIZES), size: (MemoryLayout<size_t>.size * values.count), in: &values)
         return values
     }()
     

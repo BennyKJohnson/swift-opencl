@@ -18,11 +18,11 @@ public class CLBuildInfo {
         self.program = program
     }
     
-    lazy var status: cl_int = {
+    public lazy var status: cl_int = {
        return self.getInfo(cl_program_build_info(CL_PROGRAM_BUILD_STATUS))
     }()
     
-    lazy var buildLog: String = {
+    public lazy var buildLog: String = {
         return self.getInfoString(cl_program_build_info(CL_PROGRAM_BUILD_LOG))
     }()
     
@@ -74,16 +74,20 @@ public class CLProgram {
     public func buildInfo(for device: CLDevice) -> CLBuildInfo {
        return CLBuildInfo(deviceID: device.deviceID, program: program)
     }
-    
-    public func build(forDevice device: CLDevice) -> (info:CLBuildInfo, error:CLError?)  {
+    public func build(forDevice device: CLDevice) throws -> CLBuildInfo  {
         
         var devicePTR: cl_device_id? = device.deviceID
         let result = clBuildProgram(program, 1, &devicePTR, nil, nil, nil)
         let buildInfo = CLBuildInfo(deviceID: device.deviceID, program: program)
+        print(buildInfo.buildLog)
+        if let error = CLError(rawValue: result) {
+            throw error
+        }
         
-        return (buildInfo, CLError(rawValue: result))
+        
+        
+        return buildInfo
     }
-    
     deinit {
         clReleaseProgram(program)
     }
